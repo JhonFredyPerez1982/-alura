@@ -1,119 +1,140 @@
-.Calculadora{
+.Calculadora {
     background: url(imagenes/muñeco.png);
-    margin:10px;
+    margin: 10px;
     width: 95%;
-border:solid 20px;
-
+    border: solid 20px;
+    background-color: #f3f5f6;
 }
 
-
-.encriptar{
-vertical-align: 40px;
+.encriptar {
+    vertical-align: 40px;
     background: black;
-        border-radius: 10px;
+    border-radius: 10px;
     border-color: grey;
-        font-size: 30px;
-        font-weight: bold;
-        color:white;
-    }
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
 
-    .desencriptar{
-        vertical-align: 40px;
-            background: black;
-                border-radius: 10px;
-            border-color: grey;
-                font-size: 30px;
-                font-weight: bold;
-                color:white;
-            }
-.botonCopiar{
-margin: 10px;
+.desencriptar {
+    vertical-align: 40px;
+    background: black;
+    border-radius: 10px;
+    border-color: grey;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.botonCopiar {
+    vertical-align: 20px;
+    margin: 10px;
     background: darkblue;
-border:solid 2px;
-    border-color: grey; 
-           }
-mark{
+    border: solid 2px;
+    border-color: grey;
+}
+
+mark {
     color: blue;
-     font-weight: bold;
+    font-weight: bold;
     font-size: 20px;
     vertical-align: 15px;
 }
-.copiar{
-font-weight: bold;
+
+.copiar {
+    font-weight: bold;
+    margin-right: 30px;
+    border-bottom: solid 4px #0a3871;
+    border-radius: 10px;
 }
 
+.botonCopiar:hover {
+    box-shadow: 10px 10px 30px 15px darkblue;
+}
 
-            .panel_1{
-    margin :20px;
+.pegar {
+    display: inline-block;
+    margin: auto;
+    border-bottom: solid 4px #0a3871;
+    border-radius: 10px;
+}
+
+.panel_1 {
+    margin: 20px;
     text-align: center;
-    
 }
-.mensaje{
-text-align: center;
+
+.mensaje {
+    text-align: center;
     border: groove 10px;
     border-radius: 10px;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Combo', cursive;
-color: blue;
-
-}        
-.principal1{
- 
-display:inline-block;
+    color: blue;
 }
 
-.panel{
-        text-align: center;
-         } 
-             .input-texto{
-                border: groove 10px;
-                border-radius: 10px;
-                font-size: 30px;
-             } 
-             
-    .Botones_calculadora {  
-        margin-right:40px;
-     text-align: center;   }
-.Botones_calculadora li{  
-    display:inline; 
-     vertical-align: top;
-    margin:30px;
-    }
-    .botones {
-        background: black;
-        text-align: center;
+.principal1 {
+    display: inline-block;
+}
+
+.panel {
+    text-align: center;
+}
+
+.input-texto {
+    border: groove 10px;
     border-radius: 10px;
-    border-color: grey;
-        font-size: 30px;
-        font-weight: bold;
-        color:white;
-    }
-    .botonReset{
-        padding-top:10px;
-        padding-bottom:10px;
-            
-            background: black;
-            text-align: center;
-        border-radius: 10px;
-        border-color: grey;
-            font-size: 40px;
-            font-weight: bold; 
-        color: white;
-        }
-    
-.botonTransparente{
-    border-color: white;
-    background: white;
- }
- .botonSpace {
-    width:100%;
-    height:70px ;
+    font-size: 30px;
+}
+
+.Botones_calculadora {
+    margin-right: 40px;
+    text-align: center;
+}
+
+.Botones_calculadora li {
+    display: inline;
+    vertical-align: top;
+    margin: 30px;
+}
+
+.botones {
     background: black;
     text-align: center;
-border-radius: 10px;
-border-color: grey;
+    border-radius: 10px;
+    border-color: grey;
     font-size: 30px;
-    font-weight: bold; 
-color: white;
+    font-weight: bold;
+    color: white;
+}
+
+.botonReset {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background: black;
+    text-align: center;
+    border-radius: 10px;
+    border-color: grey;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.botonTransparente {
+    border-color: white;
+    background: white;
+}
+
+.botonSpace {
+    width: 100%;
+    height: 70px;
+    background: black;
+    text-align: center;
+    border-radius: 10px;
+    border-color: grey;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
 }

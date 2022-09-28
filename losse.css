@@ -1,0 +1,33 @@
+
+body{
+   background-color:  #f3f5f6;
+}
+    .inicio{
+        background:url(imagenes/bg.jpg);
+            }
+.inicio .portada {
+    display: inline-block;
+margin:0px auto;
+text-align: center;
+}
+
+.portada li{
+    padding:20px;
+    vertical-align: top;
+    display: inline;
+ }
+      
+#door{
+    margin: 50px ;
+padding:  30px;
+border-radius: 20px;
+font-size: 20px;
+font-weight: bold;
+background-color: darkblue;
+border-bottom: solid 4px #0a3871;
+}
+.hi{
+    width:400px ;
+    height: 480px;
+text-align: center;
+}

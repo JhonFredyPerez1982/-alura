@@ -1,106 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
-        </style>
-        
-
-    
+    </style>
     <link rel="stylesheet" href="encriptador.css">
     <title>Document</title>
 </head>
+
 <body>
-    
-<div>
-    <header>
+    <div>
+        <header>
+        </header>
+        <main>
+            <section>
+                <div class="Calculadora">
+                    <main class="Principal1">
+                        <div>
+                            <div class="panel_1">
+                                <button class="encriptar" onclick="btnEncriptar()">encriptar</button>
+                                <input type="button" value="Solo letras minúsculas y sin acentos..." class="mensaje"
+                                    cols="20" rows="2">
+                                <button class="desencriptar" onclick="btnDesencriptar()">
+                                    Desencriptar
+                                </button>
+                                <section class="botonCopiar"> <button class="copiar"
+                                        onclick="copiar()"><mark>Copiar</mark> <img
+                                            src="imagenes/logoalura.png"></button>
+                                    <button class="pegar"> <img src="imagenes/logoalura.png"><mark>Pegar</mark></button>
 
-    </header>
-
-    <main>
-        <section>
-
-            <div class="Calculadora"> 
-
-                <main class="Principal1">
-                    
-                    
-                
-                    <div><div class="panel_1">
-                        <button  class="encriptar" onclick="btnEncriptar()">encriptar</button> 
-                          <input type="button"  value="Solo letras minúsculas y sin acentos..." class="mensaje" cols="20" rows="2">
-                  
-                        <button class="desencriptar" onclick="btnDesencriptar()">
-                            Desencriptar
-                        </button>
-                        <section class="botonCopiar"> <button class="copiar" onclick="copiar()"><mark>Copiar</mark>  <img src= "imagenes/logoalura.png"</button>
-                        </section>
-                    </div>           
-                    </div>
-                        
-                    <form name="commentform" class="panel" action="#" target="_blank" >
-                        <textarea  cols="60" rows="2"  maxlength="200"  id='input-texto'class='input-texto' ></textarea>
-                        <ul class="Botones_calculadora">
-                        <li><input  id="a" class="botones" type="button" value="a" onclick="display('a')"></li>
-                  <li><input  id="b" class="botones" type="button" value="b" onclick="display('b')"></li>
-                  <li><input  id="c" class="botones" type="button" value="c" onclick="display('c')"></li>
-                    <li><input  id="d" class="botones" type="button" value="d" onclick="display('d')"></li>
-                    <li><input  id="e" class="botones" type="button" value="e" onclick="display('e')"></li>
-                    <input class="botonReset" type="reset" value="reset"> 
-                     <li><input  id="f" class="botones" type="button" value="f" onclick="display('f')"></li>
-                    <li><input  id="g" class="botones" type="button" value="g" onclick="display('g')"></li>
-                    <li><input  id="h" class="botones" type="button" value="h" onclick="display('h')"></li>
-                    <li><input  id="i" class="botones" type="button" value="i" onclick="display('i')"></li>
-                    <li><input  id="j" class="botones" type="button" value="j" onclick="display('j')"></li>
-                </ul>
-                <ul class="Botones_calculadora"><br>
-                <li><input   class="botonTransparente" type="button" value=""></li>
-                <li><input  id="k" class="botones" type="button" value="k" onclick="display('k')"></li>
-                  <li><input  id="l" class="botones" type="button" value="l" onclick="display('l')"></li>
-                  <li><input  id="ll" class="botones" type="button" value="ll" onclick="display('ll')"></li>
-                    <li><input  id="m" class="botones" type="button" value="m" onclick="display('m')"></li>
-                    <li><input  id="n" class="botones" type="button" value="n" onclick="display('n')"></li>
-                    <li><input  id="ñ" class="botones" type="button" value="ñ" onclick="display('ñ')"></li>
-                    <li><input  id="o" class="botones" type="button" value="o" onclick="display('o')"></li>
-                    <li><input  id="p" class="botones" type="button" value="p" onclick="display('p')"></li>
-                    <li><input  id="q" class="botones" type="button" value="q" onclick="display('q')"></li>
-                    <li><input   class="botonTransparente" type="button" value=""></li>
-                </ul>  
-                  <ul class="Botones_calculadora"><br>
-                    <li><input   class="botonTransparente" type="button" value=""></li>
-                   <li><input  id="r" class="botones" type="button" value="r" onclick="display('r')"></li>
-                      <li><input  id="s" class="botones" type="button" value="s" onclick="display('s')"></li>
-                      <li><input  id="t" class="botones" type="button" value="t" onclick="display('t')"></li>
-                        <li><input  id="u" class="botones" type="button" value="u" onclick="display('u')"></li>
-                        <li><input  id="v" class="botones" type="button" value="v" onclick="display('v')"></li>
-                        <li><input  id="w" class="botones" type="button" value="w" onclick="display('w')"></li>
-                        <li><input  id="x" class="botones" type="button" value="x" onclick="display('x')"></li>
-                        <li><input  id="y" class="botones" type="button" value="y" onclick="display('y')"></li>
-                        <li><input  id="z" class="botones" type="button" value="z" onclick="display('z')"></li>
-                        <li><input   class="botonTransparente" type="button" value=""></li>
-                    </ul>
-                    <ul>
-                        <li><input  id="space" class="botonSpace" type="button" value=" SPACE" onclick="display(' ')"></li>
-                         </ul>
-                </ul>
-                </form>           
-        </section>        
-        <section >
-    </section> 
+                                </section>
+                            </div>
+                        </div>
+                        <form name="commentform" class="panel" action="#" target="_blank">
+                            <textarea cols="60" rows="2" maxlength="200" id='input-texto'
+                                class='input-texto'></textarea>
+                            <ul class="Botones_calculadora">
+                                <li><input id="a" class="botones" type="button" value="a" onclick="display('a')"></li>
+                                <li><input id="b" class="botones" type="button" value="b" onclick="display('b')"></li>
+                                <li><input id="c" class="botones" type="button" value="c" onclick="display('c')"></li>
+                                <li><input id="d" class="botones" type="button" value="d" onclick="display('d')"></li>
+                                <li><input id="e" class="botones" type="button" value="e" onclick="display('e')"></li>
+                                <input class="botonReset" type="reset" value="reset">
+                                <li><input id="f" class="botones" type="button" value="f" onclick="display('f')"></li>
+                                <li><input id="g" class="botones" type="button" value="g" onclick="display('g')"></li>
+                                <li><input id="h" class="botones" type="button" value="h" onclick="display('h')"></li>
+                                <li><input id="i" class="botones" type="button" value="i" onclick="display('i')"></li>
+                                <li><input id="j" class="botones" type="button" value="j" onclick="display('j')"></li>
+                            </ul>
+                            <ul class="Botones_calculadora"><br>
+                                <li><input class="botonTransparente" type="button" value=""></li>
+                                <li><input id="k" class="botones" type="button" value="k" onclick="display('k')"></li>
+                                <li><input id="l" class="botones" type="button" value="l" onclick="display('l')"></li>
+                                <li><input id="ll" class="botones" type="button" value="ll" onclick="display('ll')">
+                                </li>
+                                <li><input id="m" class="botones" type="button" value="m" onclick="display('m')"></li>
+                                <li><input id="n" class="botones" type="button" value="n" onclick="display('n')"></li>
+                                <li><input id="ñ" class="botones" type="button" value="ñ" onclick="display('ñ')"></li>
+                                <li><input id="o" class="botones" type="button" value="o" onclick="display('o')"></li>
+                                <li><input id="p" class="botones" type="button" value="p" onclick="display('p')"></li>
+                                <li><input id="q" class="botones" type="button" value="q" onclick="display('q')"></li>
+                                <li><input class="botonTransparente" type="button" value=""></li>
+                            </ul>
+                            <ul class="Botones_calculadora"><br>
+                                <li><input class="botonTransparente" type="button" value=""></li>
+                                <li><input id="r" class="botones" type="button" value="r" onclick="display('r')"></li>
+                                <li><input id="s" class="botones" type="button" value="s" onclick="display('s')"></li>
+                                <li><input id="t" class="botones" type="button" value="t" onclick="display('t')"></li>
+                                <li><input id="u" class="botones" type="button" value="u" onclick="display('u')"></li>
+                                <li><input id="v" class="botones" type="button" value="v" onclick="display('v')"></li>
+                                <li><input id="w" class="botones" type="button" value="w" onclick="display('w')"></li>
+                                <li><input id="x" class="botones" type="button" value="x" onclick="display('x')"></li>
+                                <li><input id="y" class="botones" type="button" value="y" onclick="display('y')"></li>
+                                <li><input id="z" class="botones" type="button" value="z" onclick="display('z')"></li>
+                                <li><input class="botonTransparente" type="button" value=""></li>
+                            </ul>
+                            <ul>
+                                <li><input id="space" class="botonSpace" type="button" value=" SPACE"
+                                        onclick="display(' ')"></li>
+                            </ul>
+                            </ul>
+                        </form>
+            </section>
+            <section>
+            </section>
+        </main>
+    </div>
     </main>
-   
-
-
-</div>
-
-</main>
-<script src="encriptador.js"></script>
-</div>
-
-    
+    <script src="encriptador.js"></script>
+    </div>
+    <a href='./index.html'; >volver</a>
+                                
 </body>
+
 </html>
